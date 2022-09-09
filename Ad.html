@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Ad.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div  class="main-container" >
+       <div>
+        <h2>Advertisement</h2>
+        <!-- This is container 1 -->
+        <div class="container" id="c1" >
+          <img src="./c1-img.jpeg" class="c1-img" >
+          <a href="https://adssettings.google.com/whythisad" target="_blank" >
+            <button  class="btn-info" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg></button>
+          </a>
+          <button  onclick="closeC1()" class="btn-close" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+        </div>
+
+        <!-- This is container 2 -->
+        <div class="container" id="c2" >
+            <div class="c2-header" >Ads by Google</div>
+            <button onclick="closeC2()" class="c2-btn1" >Stop seeing this ad</button>
+            <div></div>
+            <a href="https://adssettings.google.com/whythisad" ><button class="c2-btn2" >Why this ad</button></a>
+        </div>
+        <!-- This is container 3 -->
+        <div class="container" id="c3" >
+           <div> <button class="c3-btn" onclick="closeC3()"  >Seen this ad multiple times </button></div>
+            <button class="c3-btn" onclick="closeC3()" >Ad was inappropriate </button><br>
+            <button class="c3-btn" onclick="closeC3()" > Not intrested in this ad</button><br>
+            <button class="c3-btn" onclick="closeC3()" >Ad covered content </button>
+        </div>
+        <!-- This is container 4 -->
+        <div class="container" id="c4" >
+          <div class="c4-header" >we will not try to show this ad again</div>
+        </div>
+       </div>
+    </div>
+    <script  src="Ad.js"></script>
+</body>
+</html>
